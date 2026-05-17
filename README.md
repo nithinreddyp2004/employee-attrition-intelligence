@@ -31,13 +31,16 @@ Retail businesses struggle to understand their diverse customer base. This app a
 
 ## 📁 Project Structure
 
-| File | Description |
-|---|---|
-| `app.py` | Streamlit web app |
-| `model_retail.ipynb` | Model training notebook |
-| `customer_segmentation_model.pkl` | Saved K-Means model |
-| `Online Retail.xlsx` | Dataset |
-| `requirements.txt` | Dependencies |
+```
+retail-customer-segmentation/
+│
+├── app.py                           # Streamlit web app
+├── model_retail.ipynb               # Jupyter notebook with EDA and model training
+├── customer_segmentation_model.pkl  # Saved trained model
+├── Online Retail.xlsx               # Dataset
+├── requirements.txt                 # Python dependencies
+└── README.md                        # Project documentation
+```
 
 ---
 
