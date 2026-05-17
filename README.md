@@ -43,7 +43,8 @@ Employee attrition is one of the biggest challenges for organizations. Losing ke
 ---
 
 ## 📁 Project Structure
-'''
+
+```
 employee-attrition-intelligence/
 │
 ├── app.py                        # Streamlit web app
@@ -51,7 +52,8 @@ employee-attrition-intelligence/
 ├── artifacts.pkl                 # Saved model, scaler and encoder
 ├── HR-Employee-Attrition.csv     # Dataset
 ├── requirements.txt              # Python dependencies
-└── README.md                     # Project documentation '''
+└── README.md                     # Project documentation
+```
 ---
 
 ## ⚙️ How to Run Locally
