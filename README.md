@@ -1,6 +1,6 @@
-# 🛒 Retail Customer Segmentation App
+# 👔 Employee Attrition Intelligence App
 
-A machine learning web application that segments retail customers into groups using **K-Means Clustering** and **RFM Analysis** (Recency, Frequency, Monetary). Built with Python, Scikit-learn, and deployed using Streamlit.
+A machine learning web application that predicts whether an employee is likely to leave the company based on HR data. Built with Python, Scikit-learn (Logistic Regression), and deployed using Streamlit.
 
 ---
 
@@ -13,7 +13,7 @@ A machine learning web application that segments retail customers into groups us
 
 ## 📌 Problem Statement
 
-Retail businesses struggle to understand their diverse customer base. This app automatically groups customers by purchasing behavior, helping businesses target the right customers with the right strategy.
+Employee attrition is one of the biggest challenges for organizations. Losing key employees costs time, money, and productivity. This app helps HR teams identify at-risk employees early so they can take action to retain them.
 
 ---
 
@@ -23,51 +23,61 @@ Retail businesses struggle to understand their diverse customer base. This app a
 |---|---|
 | Python | Core programming language |
 | Pandas & NumPy | Data processing |
-| Scikit-learn | K-Means clustering model |
+| Scikit-learn | Logistic Regression model |
+| StandardScaler | Feature scaling |
+| OneHotEncoder | Categorical encoding |
 | Matplotlib & Seaborn | Data visualization |
 | Streamlit | Web app deployment |
 
 ---
 
+## 📊 Model Performance
+
+| Metric | Score |
+|---|---|
+| Accuracy | ~86% |
+| Precision | Evaluated on test set |
+| Recall | Evaluated on test set |
+| F1 Score | Evaluated on test set |
+
+---
+
 ## 📁 Project Structure
-
-```
-retail-customer-segmentation/
+'''
+employee-attrition-intelligence/
 │
-├── app.py                           # Streamlit web app
-├── model_retail.ipynb               # Jupyter notebook with EDA and model training
-├── customer_segmentation_model.pkl  # Saved trained model
-├── Online Retail.xlsx               # Dataset
-├── requirements.txt                 # Python dependencies
-└── README.md                        # Project documentation
-```
-
+├── app.py                        # Streamlit web app
+├── classifi.ipynb                # Jupyter notebook with EDA and model training
+├── artifacts.pkl                 # Saved model, scaler and encoder
+├── HR-Employee-Attrition.csv     # Dataset
+├── requirements.txt              # Python dependencies
+└── README.md                     # Project documentation '''
 ---
 
 ## ⚙️ How to Run Locally
 
-1. Clone the repo
-git clone https://github.com/nithinreddyp2004/retail-customer-segmentation.git
+```bash
+# 1. Clone the repo
+git clone https://github.com/nithinreddyp2004/employee-attrition-intelligence.git
 
-2. Go into the folder
-cd retail-customer-segmentation
+# 2. Go into the folder
+cd employee-attrition-intelligence
 
-3. Install dependencies
+# 3. Install dependencies
 pip install -r requirements.txt
 
-4. Run the app
+# 4. Run the app
 streamlit run app.py
+```
 
 ---
 
-## 📊 RFM Segments
+## 🔍 Features Used
 
-| Segment | Description |
-|---|---|
-| Champions | Bought recently, buy often, spend the most |
-| Loyal Customers | Buy regularly with good spend |
-| At Risk | Haven't bought in a while |
-| Lost | Long inactive, low spend |
+- Employee demographics (Age, Gender, MaritalStatus)
+- Job details (Department, JobRole, JobLevel)
+- Work metrics (OverTime, YearsAtCompany, MonthlyIncome)
+- Satisfaction scores (JobSatisfaction, WorkLifeBalance)
 
 ---
 
